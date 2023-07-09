@@ -5,7 +5,7 @@ body{
     margin:5px;
     padding:2px;
     background-image: url("../images/mkbhd.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 h1{
