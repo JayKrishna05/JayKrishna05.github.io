@@ -1,40 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/stylesheet.css">
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
-</style>
-  <title>
- 	Home
-  </title>
-  <link rel="icon" type="image/x-icon" href="images/thumb1.ico">
- </head>
- <body>
- 	<header>
- 		<nav>
- 			<div> Find Me On:</div>
-      <a href="https://www.linkedin.com/in/jay-krishna-kamlekar-016620281/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/JayKrishna05" target="_blank">GitHub</a>
- 			<a href="https://www.instagram.com/jaykaykay.05/" target="_blank">Instagram</a>
- 			<a href="https://myanimelist.net/animelist/JayKayK" target="_blank"> MyAnimeList</a>
-    </nav>
-    <h1> HI, I'M JAY</h1>	
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Jay Krishna Kamlekar, an AI & ML Computer Science student building applied machine learning and data-driven systems."
+    />
+    <title>Jay Krishna Kamlekar | AI & ML Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Jay Krishna Kamlekar home">
+        <span>JK</span>
+        <i>.</i>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle color mode">
+        <span class="sun"></span>
+      </button>
     </header>
-    <main>
-    <h1>About Me</h1>
-    <aside class="left">
-      <img src="./images/pic1.jpeg" alt="picture of Jay">
-    </aside>
-    <section class="right">
-      <p>
-        Hello,I am Jay Krishna,currently a freshman studying computer science engineering at <a href="https://vit.ac.in/" target="_blank" alt="official website of VIT"> Vellore Institute of Technology,Vellore</a>
-      </p>
-      <p>
-        My hobbies include being a tech enthusiast,reading,writing,quizzes,watching movies and shows.
-      </p>
-    </section>	
-    
+
+    <main id="home">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <h1>Jay Krishna <span>Kamlekar</span></h1>
+          <p class="role">AI & ML Computer Science Student</p>
+          <p class="intro">
+            I build intelligent, data-driven solutions for real world problems,
+            with a focus on applied AI, scalable ML systems, and edge-ready
+            inference.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <svg class="data-ribbons" viewBox="0 0 900 560" role="img">
+            <defs>
+              <linearGradient id="ribbonBlue" x1="0%" y1="50%" x2="100%" y2="50%">
+                <stop offset="0%" stop-color="#07aeea" stop-opacity="0.1" />
+                <stop offset="48%" stop-color="#07aeea" stop-opacity="0.95" />
+                <stop offset="100%" stop-color="#07aeea" stop-opacity="0.12" />
+              </linearGradient>
+              <linearGradient id="ribbonLime" x1="0%" y1="50%" x2="100%" y2="50%">
+                <stop offset="0%" stop-color="#85d90f" stop-opacity="0.08" />
+                <stop offset="52%" stop-color="#85d90f" stop-opacity="0.86" />
+                <stop offset="100%" stop-color="#85d90f" stop-opacity="0.1" />
+              </linearGradient>
+            </defs>
+            <path class="ribbon ribbon-a" d="M-20 440 C170 400 180 210 360 260 C540 310 520 80 700 90 C790 94 840 38 920 20" />
+            <path class="ribbon ribbon-b" d="M-30 500 C160 500 230 310 380 320 C560 332 570 230 710 230 C820 230 850 130 930 118" />
+            <path class="ribbon ribbon-c" d="M-20 390 C125 355 220 260 330 210 C530 118 590 360 720 300 C835 246 852 174 930 156" />
+            <g class="nodes">
+              <circle cx="168" cy="390" r="8" />
+              <circle cx="326" cy="248" r="7" />
+              <circle cx="524" cy="276" r="9" />
+              <circle cx="690" cy="92" r="7" />
+              <circle cx="765" cy="232" r="10" />
+              <circle cx="840" cy="132" r="7" />
+            </g>
+            <g class="dot-grid">
+              <circle cx="110" cy="190" r="2" /><circle cx="132" cy="190" r="2" /><circle cx="154" cy="190" r="2" />
+              <circle cx="110" cy="214" r="2" /><circle cx="132" cy="214" r="2" /><circle cx="154" cy="214" r="2" />
+              <circle cx="650" cy="375" r="2" /><circle cx="674" cy="375" r="2" /><circle cx="698" cy="375" r="2" />
+              <circle cx="650" cy="399" r="2" /><circle cx="674" cy="399" r="2" /><circle cx="698" cy="399" r="2" />
+            </g>
+          </svg>
+          <div class="float-card brain">AI</div>
+          <div class="float-card code">&lt;/&gt;</div>
+          <div class="float-card chip"></div>
+        </div>
+
+        <a class="scroll-cue" href="#projects" aria-label="Scroll to projects">
+          <span></span>
+          Scroll to explore
+        </a>
+      </section>
+
+      <section id="projects" class="projects section-shell">
+        <p class="section-label">Projects</p>
+        <article class="project-row reveal">
+          <div class="project-art wafer-art" aria-hidden="true">
+            <div class="wafer"></div>
+            <div class="arrow"></div>
+            <div class="layers"><span></span><span></span><span></span></div>
+            <ul>
+              <li><b class="red"></b> Scratch</li>
+              <li><b class="amber"></b> Particle</li>
+              <li><b class="blue"></b> Pattern</li>
+              <li><b class="green"></b> None</li>
+            </ul>
+          </div>
+          <div class="project-copy">
+            <span class="project-number">01</span>
+            <h2>Silicon Wafer Defect Classification System</h2>
+            <p>
+              Designed a hybrid CNN-Transformer model for multi-class wafer
+              defect classification, reaching 83.19% accuracy on key defect
+              types while supporting incremental training scenarios.
+            </p>
+            <div class="tag-list">
+              <span>Python</span><span>PyTorch</span><span>NumPy</span><span>Pandas</span><span>Patent filing in progress</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-row reverse reveal">
+          <div class="project-art vehicle-art" aria-hidden="true">
+            <div class="road-line"></div>
+            <div class="car car-left"></div>
+            <div class="signal"></div>
+            <div class="warning">!</div>
+            <div class="car car-right"></div>
+          </div>
+          <div class="project-copy">
+            <span class="project-number lime">02</span>
+            <h2>ML-Driven Embedded V2V Collision Warning System</h2>
+            <p>
+              Built a real-time vehicle-to-vehicle collision warning system on
+              embedded hardware, reducing long-range prediction error by more
+              than 50% and keeping safety classification under 200 ms latency.
+            </p>
+            <div class="tag-list">
+              <span>Embedded ML</span><span>RTOS</span><span>C++</span><span>TTC</span><span>Patent filing in progress</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="experience" class="timeline section-shell">
+        <p class="section-label">Experience & Education</p>
+        <div class="timeline-list reveal">
+          <div class="timeline-item">
+            <time>June 2025</time>
+            <div>
+              <h3>Intern - Xenovex Technologies</h3>
+              <p>
+                Developed a full-stack application with Angular, .NET Core, SQL
+                Server, and Swagger-based REST APIs for database workflows and
+                application data flow.
+                <a class="inline-link" href="https://drive.google.com/file/d/17gojg8adlZdV0tWCe5iQpSzQLSBA_dmA/view?usp=drive_link" target="_blank" rel="noreferrer">Certificate</a>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <time>2023 - Present</time>
+            <div>
+              <h3>B.Tech, CSE (AI & ML) - Vellore Institute of Technology</h3>
+              <p>Current CGPA: 8.19. Focused on machine learning, applied AI, and scalable software systems.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <time>2023</time>
+            <div>
+              <h3>Senior School Certificate - Shrishti Vidyashram Sr. Sec. School</h3>
+              <p>Completed Class XII with 77.2%.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills section-shell">
+        <p class="section-label">Skills</p>
+        <div class="skill-matrix reveal">
+          <div class="skill-row">
+            <h3>Languages</h3>
+            <p>Python, C++, C, Java, SQL, JavaScript, TypeScript, C#, Assembly</p>
+          </div>
+          <div class="skill-row">
+            <h3>ML / AI</h3>
+            <p>PyTorch, Scikit-Learn, NumPy, Pandas, Matplotlib</p>
+          </div>
+          <div class="skill-row">
+            <h3>Web & Frameworks</h3>
+            <p>HTML/CSS, ReactJS, Bootstrap, Angular, Swagger</p>
+          </div>
+          <div class="skill-row">
+            <h3>Databases & Tools</h3>
+            <p>Microsoft SQL Server, REST APIs, data pipelines, debugging</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="certifications section-shell">
+        <p class="section-label">Certifications</p>
+        <div class="cert-list reveal">
+          <a href="https://coursera.org/share/0aa7727fba5ec6fa7951b59839fb8587" target="_blank" rel="noreferrer">
+            <strong>Generative AI with Large Language Models</strong>
+            <span>DeepLearning.AI · 2025</span>
+          </a>
+          <a href="https://coursera.org/share/d39add29a51a7acdd31d6ca80edbd413" target="_blank" rel="noreferrer">
+            <strong>Web Design for Everybody</strong>
+            <span>Coursera · 2024</span>
+          </a>
+        </div>
+      </section>
     </main>
- </body>
+
+    <footer id="contact" class="footer section-shell">
+      <div>
+        <p class="section-label">Let's Connect</p>
+        <h2>Open to AI, ML, and full-stack opportunities.</h2>
+      </div>
+      <address>
+        <a href="mailto:jkkamlekar@gmail.com">jkkamlekar@gmail.com</a>
+        <a href="tel:+917904069347">+91 7904069347</a>
+        <a href="https://www.linkedin.com/in/jaykrishna05" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/JayKrishna05" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://leetcode.com/u/Jay_Kay_Kay/" target="_blank" rel="noreferrer">LeetCode</a>
+      </address>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
